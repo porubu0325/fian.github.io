@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* Generic Settings */
+html, body {
+    text-align: center;
+    margin: auto;
+    min-width: 300px auto;
+    max-width: 800px auto;
+    background-color: rgb(207, 207, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* Link Color */
+    a {
+        color:rgb(225, 135, 0);
+        text-decoration: none;
+    }
+    a:hover {
+        color:rgb(225, 135, 0);
+        text-decoration: underline;
+    }
+/* 大見出し */
+h2 {
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    border-left: 20px solid rgb(81, 81, 240);
+    color: #626362;
+    background-color: #b9b9b9;
+    border-radius: 3px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 5px;
+    display: block;
+    color: #4c4c4c;
+}
+header p {
+    font-size: 12px;
+}
+
+/* Navigation */
+    nav {
+        padding-right: 40px;
+        text-decoration: none;
+        background-color: rgb(81, 81, 240);
+        list-style-type: none;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+        box-shadow: 0 0 4px;
+    }
+    nav a {
+        color: rgb(226, 226, 226);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    nav a:hover {
+
+        color: rgb(226, 226, 226);
+        background-color: rgb(145, 145, 242);
+    }
+    nav ul {
+        list-style-type: none;
+        display: inline-block;
+        font-family: sans-serif;
+    }
+    nav li {
+        list-style-type: none;
+        display: inline-block;
+    }
+    #primarymenu {
+        text-align: left;
+    }
+    #menu-langs {
+        text-align: right;
+    }
+
+main {
+    color: #646464;
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 1%;
+    margin: 40px auto;
+    padding: 40px 40px;
+    background-color: rgb(230, 229, 229);
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
+main section {
+    margin-left: 10px;
+    text-align: left;
+}
+footer {
+    background-color: #4c4c4c;
+
+    padding: 20px;
+    box-shadow: 4px 4px 4px;
+}
+/* その他 */
+.clear {
+    clear: both;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

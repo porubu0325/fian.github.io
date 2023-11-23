@@ -3,94 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>FIAN Official Website</title>
 </head>
 <body>
     <header>
         <a href="/" title="FIAN">
-            <img src="/images/logo.png" width="250px" alt="FIAN Logo">
+            <img src="/media/logo.png" width="250px" alt="FIAN Logo">
         </a>
         <p>...a independent alliance of fediverse instances</p>
     </header>
-    <div class="menu">
-        <ul id="primary">
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#member">Members</a></li>
-        </ul>
-        <ul id="social">
-            <li><a href="https://discord.gg/"></a></li>
-        </ul>
-    </div>
-
-    <section id="about">
-        <h2>Welcome to Fediverse Instance Alliance Network</h2>
-        <p>We are a network of fediverse instances. FIAN is mean <b>Fediverse Instance Alliance Network</b>, because It's a Allliance of Fediverse Instances, like <a href="https://joinmastodon.org/">Mastodon</a>, <a href="https://www.misskey-hub.net/">Misskey</a>, and <a href="https://pleroma.social/">Pleroma</a>.</p>
-    </section>
-    <section id="members">
-        <h2>Members</h2>
-        <table>
-            <tr>
-                <th>Member Name</th>
-                <td>Software</td>
-                <td>Country and Region</td>
-                <td>Languages</td>
-                <td>Server Hosted by</td>
-                <td>Owned by</td>
-                <td>Social Links</td>
-                <td>Notes</td>
-            </tr>
-            <tr>
-                <th class="membername"><a href="https://mk.shumihub.net/">Shumisskey</a></th>
-                <td class="softwares">Misskey v13</td>
-                <td class="country">🇯🇵, Tokyo</td>
-                <td class="langs">🇯🇵</td>
-                <td class="serverhost"><a href="https://vps.sakura.ad.jp/">Sakura Internet Inc.</a><br>
+    <nav>
+        <div class="menu">
+            <ul id="primarymenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#member">Members</a></li>
+            </ul>
+            <ul id="menu-langs">
+                <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                <li><a href="#" onclick="changeLanguage('ja')">日本語</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>Welcome to Fediverse Instance Alliance Network</h2>
+            <p>We are a network of fediverse instances. FIAN is mean <b>Fediverse Instance Alliance Network</b>, because It's a Allliance of Fediverse Instances, like <a href="https://joinmastodon.org/">Mastodon</a>, <a href="https://www.misskey-hub.net/">Misskey</a>, and <a href="https://pleroma.social/">Pleroma</a>.<br>
+            If you want to join, join the Discord server or <a href="https://forum.shumihub.net/">this forum topic</a>. After that, just put the following text on the front page. </p>
+            <p>We are member of <a href="https://fian.github.io/">FIAN (Fediverse Instance Alliance Network)</a>.</p>
+            <section>
+                <h3>What we do</h3>
+                <ul>
+                    <li>Fediverse Instance owner's partnership</li>
+                    <li>Support for opening new Fediverse instances</li>
+                </ul>
+            </section>
+        </section>
+        <section id="members">
+            <h2>Members</h2>
+            <table>
+                <tr>
+                    <th>Member Name</th>
+                    <td>Software</td>
+                    <td>Country and Region</td>
+                    <td>Languages</td>
+                    <td>Server Hosted by</td>
+                    <td>Owned by</td>
+                    <td>Other Social Links</td>
+                    <td>Notes</td>
+                </tr>
+                <tr>
+                    <th class="membername">FIAN Official Instance (Coming Soon)</th>
+                    <td class="softwares">-</td>
+                    <td class="country">-</td>
+                    <td class="langs">🇬🇧🇯🇵</td>
+                    <td class="serverhost">-</td>
+                    <td class="instanceowner">-</td>
+                    <td class="sociallinks">-</td>
+                    <td class="membernotes">Coming Soon</td>
+                </tr>
+                <tr>
+                    <th class="membername"><a href="https://mk.shumihub.net/">Shumisskey</a></th>
+                    <td class="softwares">Misskey v13</td>
+                    <td class="country">🇯🇵, Tokyo</td>
+                    <td class="langs">🇯🇵</td>
+                    <td class="serverhost"><a href="https://vps.sakura.ad.jp/">Sakura Internet Inc.</a><br>
+                        <a href="https://www.cloudflare.com/">Cloudflare Inc.</a></td>
+                    <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
+                    <td class="sociallinks"></td>
+                    <td class="membernotes"></td>
+                </tr>
+                <tr>
+                    <th class="membername"><a href="https://mk.porubu.com/">PORUBUskey</a></th>
+                    <td class="softwares">Misskey v13</td>
+                    <td class="country">🇯🇵, Tokyo</td>
+                    <td class="languages">🇯🇵🇬🇧</td>
+                    <td class="serverhost"><a href="https://vps.xserver.ne.jp/">Xserver Inc.</a><br>
                     <a href="https://www.cloudflare.com/">Cloudflare Inc.</a></td>
-                <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
-                <td class="sociallinks"></td>
-                <td class="membernotes"></td>
-            </tr>
-            <tr>
-                <th class="membername"><a href="https://mk.porubu.com/">PORUBUskey</a></th>
-                <td class="softwares">Misskey v13</td>
-                <td class="country">🇯🇵, Tokyo</td>
-                <td class="languages">🇯🇵🇬🇧</td>
-                <td class="serverhost"><a href="https://vps.xserver.ne.jp/">Xserver Inc.</a><br>
-                <a href="https://www.cloudflare.com/">Cloudflare Inc.</a></td>
-                <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
-                <td class="sociallinks"></td>
-                <td class="notes"></td>
-            </tr>
-            <tr>
-                <th class="membername"><a href="https://memesskey.me/">Memesskey</a></th>
-                <td class="softwares">Misskey v13</td>
-                <td class="country">🇺🇸, Seattle</td>
-                <td class="langs">🇬🇧</td>
-                <td class="serverhost"><a href="https://www.linode.com">Linode (Akamai Technologies Inc.)</a><br>
-                    <a href="https://www.cloudflare.com/">Cloudflare Inc.</a></td>
-                <td class="instanceowner"></td>
-                <td class="sociallinks"></td>
-                <td class="membernotes"></td>
-            </tr>
-            <tr>
-                <th class="membername"><a href="https://behemoth.masto.host/">Behemoth Social</a></th>
-                <td class="softwares">Mastodon</td>
-                <td class="country">🇫🇷</td>
-                <td class="langs">🇬🇧</td>
-                <td class="serverhost"><a href="https://masto.host/">Masto.host</a></td>
-                <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
-                <td class="sociallinks"></td>
-                <td class="notes"></td>
-            </tr>
-        </table>
-    </section>
-    <section id="affiliates">
-        <h2>Affiliates</h2>
-        <p>under construction</p>
-    </section>
-    <section>
-
-    </section>
+                    <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
+                    <td class="sociallinks"></td>
+                    <td class="notes"></td>
+                </tr>
+                <tr>
+                    <th class="membername"><a href="https://memesskey.me/">Memesskey</a></th>
+                    <td class="softwares">Misskey v13</td>
+                    <td class="country">🇺🇸, Seattle</td>
+                    <td class="langs">🇬🇧</td>
+                    <td class="serverhost"><a href="https://www.linode.com">Linode (Akamai Technologies Inc.)</a><br>
+                        <a href="https://www.cloudflare.com/">Cloudflare Inc.</a></td>
+                    <td class="instanceowner"></td>
+                    <td class="sociallinks"></td>
+                    <td class="membernotes"></td>
+                </tr>
+                <tr>
+                    <th class="membername"><a href="https://behemoth.masto.host/">Behemoth Social</a></th>
+                    <td class="softwares">Mastodon</td>
+                    <td class="country">🇫🇷</td>
+                    <td class="langs">🇬🇧</td>
+                    <td class="serverhost"><a href="https://masto.host/">Masto.host</a></td>
+                    <td class="instanceowner"><a href="https://mk.porubu.com/@porubu">PORUBU</a></td>
+                    <td class="sociallinks"></td>
+                    <td class="notes"></td>
+                </tr>
+                <!-- Template -->
+                <tr>
+                    <th class="membername">Template</th>
+                    <td class="softwares">(software version)</td>
+                    <td class="country">(server country))</td>
+                    <td class="langs">(languages)🇯</td>
+                    <td class="serverhost">(server/cdn company)</td>
+                    <td class="instanceowner">owned by</td>
+                    <td class="sociallinks"></td>
+                    <td class="membernotes"></td>
+                </tr>
+            </table>
+        </section>
+        <section id="affiliates">
+            <h2>Affiliates</h2>
+            <p>under construction</p>
+        </section>
+        <section id="another">
+            <h2>Another Contents</h2>
+            <p>We have a public Discord server and Wiki for Fediverse enjoyers.</p>
+            <iframe src="https://discord.com/widget?id=1177341000595808397&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-right">
+            <a href="https://fian.github.io/">&copy;2023 Fediverse Independent Alliance Network</a>
+        </div>
+    </footer>
 </body>
 </html>
